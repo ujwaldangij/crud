@@ -44,19 +44,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="main table-responsive">
-                    <table class="table table-success table-striped" id="table">
-                        <thead>
-                            <tr class="table-dark">
-                                <th scope="col">id</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Created at</th>
-                                <th scope="col">Updated at</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                    </table>
+                {{-- !table maker will automatically make table header just pass data in array --}}
+                <div class="table_maker table-responsive">
+                    
                 </div>
 
             </div>

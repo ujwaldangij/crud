@@ -1,4 +1,17 @@
 export class general_function{
+    static table_heading_maker = (arr) => {
+        var html = ``;
+        html += `<table class='table table-success table-striped' id='table'>
+            <thead>
+                <tr class='table-dark'>`;
+        $.each(arr, function (indexInArray, valueOfElement) {
+            html += `<th scope='col'>${valueOfElement}</th>`;
+        });
+        html += `</tr>
+            </thead>
+            </table>`;
+        $('.table_maker').html(html);
+    }
     static show_table = (response) =>{
         $.ajax({
             type: "post",

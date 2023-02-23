@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 
 class StudentController extends Controller
 {
-    //
+    //? so we are sending api response in 4 status code only i.e 400,404,500,200
     public function index()
     {
         return view('curd');
